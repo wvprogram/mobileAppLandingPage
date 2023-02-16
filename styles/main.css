@@ -579,8 +579,8 @@ body {
 
 /** download background image **/
 .download {
-    background-image: url(/images/download-bg.png);
-    background: url(/images/download-bg.png) var(--clr-blue);
+    background-image: url("../images/download-bg.png");
+    background: url("../images/download-bg.png") var(--clr-blue);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1197,8 +1197,8 @@ body {
 
 /* community background image */
 .community {
-    background-image: url(/images/download-bg.png);
-    background: url(/images/download-bg.png) var(--clr-blue);
+    background-image: url("../images/download-bg.png");
+    background: url("../images/download-bg.png") var(--clr-blue);
     background-repeat: no-repeat;
     background-position: center;
 }
