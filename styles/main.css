@@ -306,6 +306,11 @@ body {
         font-size: 1.5rem;
         border: 2px solid var(--clr-white);
     }
+
+    .title__heading-details button {
+        width: 40%;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -489,13 +494,15 @@ body {
     position: relative;
     background: rgb(253, 198, 13, 0.3);
     border-radius: 1rem;
+    max-width: 65rem;
+    min-width: 15rem;
     width: 100%;
-    /* min-width: 5rem; */
-    height: 30rem;
+    min-height: 30rem;
 }
 
 .about__img .about__app-img {
     position: absolute;
+    max-width: 13.7rem;
     width: 55%;
     top: 2.5rem;
     right: -2rem;
@@ -582,47 +589,146 @@ body {
 
 @media screen and (max-width: 1250px) {
     .about__img {
-        width: 100%;
-        height: 30rem;
+        min-height: 27rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about {
+        gap: 8rem;
     }
     
+    .about__img {
+        min-height: 26rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .about {
+        gap: 7rem;
+    }
+
+    .about__img {
+        min-height: 25rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .about {
+        gap: 6rem;
+    }
+    
+    .about__img {
+        min-height: 24rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about {
+        gap: 5rem;
+    }
+
     .about__img .about__app-img {
-        width: 55%;
-        top: 2.5rem;
-        right: -2rem;
+        right: -1.7rem;
+        transition: all 0.3s ease-in-out;
     }
-    
+
     .about__img .about__icon {
-        border: 4px solid var(--clr-white);
-        padding: 1rem;
-        font-size: 1.5rem;
-        top: 0.5rem;
-        right: 2rem;
+        right: 1rem;
+        transition: all 0.3s ease-in-out;
     }
-    
+
     .about__img .about__person-img {
-        width: 70%;
-        left: -1.5rem;
+        left: -1rem;
+        transition: all 0.3s ease-in-out;
     }
-    
+
     .about__img .about__user-ui--img {
-        width: 30%;
-        bottom: 0.5rem;
-        right: -1.5rem;
+        right: -1.2rem;
+        transition: all 0.3s ease-in-out;
     }
     
     .about__img .about__user-img {
-        width: 80%;
-        bottom: -2rem;
-        left: -4rem;
+        left: -3rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .about__img {
+        min-height: 23rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .about__img {
+        min-height: 22rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .about__details button {
+        width: 40%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .about__img {
+        min-height: 21.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .about__img {
+        min-height: 21rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .about__img {
+        min-height: 20rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about__img {
+        min-height: 19rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about {
+        padding: 0 4rem;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .about__img {
+        width: 40%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about {
+        padding: 0 1rem;
+        transition: all 0.3s ease-in-out;
     }
 }
 
 
 /********** Share Section **********/
 .share {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
     padding: 0 4rem;
     margin: 4rem 0;
@@ -636,9 +742,7 @@ body {
 
 .share__img {
     background: var(--clr-white);
-    width: 100%;
-    /* min-width: 5rem; */
-    /* height: 20rem; */
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -652,9 +756,9 @@ body {
     position: relative;
     background: rgb(92, 62, 254, 0.3);
     border-radius: 1rem;
+    min-width: 10rem;
     width: 50%;
-    /* min-width: 5rem; */
-    height: 30rem;
+    min-height: 30rem;
 }
 
 .share__img-bg .share__graph-img {
@@ -764,43 +868,320 @@ body {
 
 @media screen and (max-width: 1300px) {
     .share__img-bg {
-        width: 50%;
-        height: 30rem;
+        min-height: 29rem;
+        transition: all 0.3s ease-in-out;
     }
     
     .share__img-bg .share__graph-img {
-        width: 190%;
-        top: 4.5rem;
-        left: -6.5rem;
-        border: 3px solid var(--clr-black);
+        top: 4rem;
+        border: 2px solid var(--clr-black);
+        transition: all 0.3s ease-in-out;
     }
     
     .share__img-bg .share__star {
-        padding: 1rem;
-        font-size: 1.5rem;
-        top: 3rem;
-        left: -2rem;
-    }
-    
-    .share__img-bg .share__user-img {
-        border: 6px solid var(--clr-white);
-        width: 6rem;
-        top: 7.5rem;
-        left: 6rem;
+        font-size: 1.4rem;
+        top: 2.5rem;
+        transition: all 0.3s ease-in-out;
     }
     
     .share__img-bg .share__user-ui--img {
-        width: 76%;
-        top: 7rem;
-        left: 3rem;
+        left: 2rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__user-img {
+        left: 5rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .share__img-bg {
+        min-height: 27rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__graph-img {
+        top: 3.15rem;
+        transition: all 0.3s ease-in-out;
     }
     
+    .share__img-bg .share__star {
+        font-size: 1.2rem;
+        top: 1.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .share__img-bg .share__user-ui--img {
+        top: 6rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__user-img {
+        top: 6.3rem;
+        left: 4.8rem;
+        transition: all 0.3s ease-in-out;
+    }
+
     .share__img-bg .share__microphone {
-        font-size: 2rem;
-        bottom: 2rem;
-        right: -3rem;
+        font-size: 1.5rem;
+        right: -2.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .share__img-bg {
+        min-height: 25rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__graph-img {
+        top: 2.6rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .share__img-bg .share__star {
+        font-size: 1rem;
+        top: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .share__img-bg .share__user-ui--img {
+        top: 5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__user-img {
+        top: 5.4rem;
+        left: 4.7rem;
+        border: 5px solid var(--clr-white);
+        width: 5.7rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__microphone {
+        font-size: 1.3rem;
+        right: -2rem;
+        bottom: 1rem;
+        width: 4rem;
+        height: 4rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .share__img-bg {
+        min-height: 23rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__graph-img {
+        top: 2rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .share__img-bg .share__star {
+        font-size: 1rem;
+        top: 0.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .share__img-bg .share__user-ui--img {
+        top: 4.5rem;
+        left: 1.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__user-img {
+        top: 4.8rem;
+        left: 4rem;
+        border: 4px solid var(--clr-white);
+        width: 5.6rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__microphone {
+        font-size: 1.2rem;
+        right: -2rem;
+        bottom: 0.5rem;
+        width: 3.8rem;
+        height: 3.8rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .share__img-bg {
+        min-height: 22rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .share__img-bg .share__user-img {
+        top: 4.8rem;
+        left: 3.7rem;
+        border: 4px solid var(--clr-white);
+        width: 5.3rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .share__img-bg {
+        min-height: 21rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__graph-img {
+        top: 1.8rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .share__img-bg .share__user-ui--img {
+        top: 4rem;
+        left: 1.25rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__user-img {
+        top: 4.3rem;
+        left: 3.6rem;
         width: 5rem;
-        height: 5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__microphone {
+        right: -1.5rem;
+        width: 3.6rem;
+        height: 3.6rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .share__img-bg {
+        min-height: 20rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__graph-img {
+        top: 1.6rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .share__img-bg .share__user-ui--img {
+        top: 3.7rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__user-img {
+        top: 4rem;
+        width: 4.8rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__microphone {
+        width: 3.5rem;
+        height: 3.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .share__img-bg .share__user-img {
+        left: 3.5rem;
+        width: 4.6rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .share__img-bg .share__user-img {
+        left: 3.3rem;
+        width: 4.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .share__img-bg {
+        min-height: 18rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__star {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+        top: 0.5rem;
+        left: -1rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__graph-img {
+        left: -5.5rem;
+        top: 1.6rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .share__img-bg .share__user-ui--img {
+        top: 3.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__user-img {
+        top: 3.7rem;
+        width: 4.4rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .share__img-bg .share__microphone {
+        width: 3.4rem;
+        height: 3.4rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .share__img-bg .share__user-img {
+        left: 3.1rem;
+        width: 4.3rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .share__img-bg {
+        min-height: 17rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .share__img-bg .share__user-img {
+        left: 3rem;
+        width: 4.1rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .share {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4rem;
+        margin: 4rem 0;
+        gap: 4rem;
+    }
+
+    .share__img {
+        grid-row: 1 / 2;
+        width: 50%;
+        justify-self: center;
     }
 }
 
