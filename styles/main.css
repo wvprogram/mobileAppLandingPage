@@ -129,12 +129,12 @@ body {
     height: 100%;
 }
 
-.navbar__xmark {
+.navbar__hamburger {
     font-size: 2rem;
     display: none;
 }
 
-.navbar__xmark:hover {
+.navbar__hamburger:hover {
     color: var(--clr-blue);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -145,7 +145,7 @@ body {
         display: none;
     }
 
-    .navbar__xmark {
+    .navbar__hamburger {
         display: block;
     }
 }
