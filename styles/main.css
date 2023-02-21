@@ -150,6 +150,12 @@ body {
     }
 }
 
+@media screen and (max-width: 570px) {
+    .navbar {
+        padding-inline: 1.5rem;
+    }
+}
+
 
 /********** Title Section **********/
 .title {
@@ -355,6 +361,10 @@ body {
         gap: 4rem;
     }
 
+    .title {
+        background-size: 300%;
+    }
+
     .title__heading-details {
         gap: 1.5rem;
         width: 80%;
@@ -366,9 +376,56 @@ body {
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 570px) {
+    .main .container:first-child {
+        padding-inline: 0;
+    }
+
     .title {
-        background-size: 300%;
+        border-radius: 0;
+        padding: 2rem 1.5rem;
+        gap: 8rem;
+    }
+
+    .title {
+        background-size: 350%;
+    }
+
+    .title__heading-details {
+        width: 100%;
+    }
+
+    .title__heading-img {
+        height: 30rem;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .title__heading-img {
+        height: 25rem;
+        width: 70%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .title {
+        background-size: 400%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .title {
+        background-size: 450%;
+    }
+    
+    .title__heading-img {
+        width: 75%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .user__one {
+        left: -2.5rem;
+        transition: all 0.3s ease-in-out;
     }
 }
 
@@ -460,6 +517,7 @@ body {
     
     .feature h2 {
         text-align: center;
+        padding-inline: 4rem;
     }
     
     .feature__items {
@@ -472,6 +530,19 @@ body {
 @media screen and (max-width: 635px) {
     .feature__items {
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feature h2 {
+        padding-inline: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .feature__items {
+        width: 100%;
+        transition: width 0.3s ease-in-out;
     }
 }
 
@@ -719,6 +790,13 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+    .about {
+        padding: 0 4rem;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 550px) {
     .about {
         padding: 0 1rem;
         transition: all 0.3s ease-in-out;
@@ -1038,6 +1116,7 @@ body {
 
     .share__img-bg .share__graph-img {
         top: 1.8rem;
+        left: -6rem;
         transition: all 0.3s ease-in-out;
     }
     
@@ -1070,6 +1149,7 @@ body {
 
     .share__img-bg .share__graph-img {
         top: 1.6rem;
+        left: -5.8rem;
         transition: all 0.3s ease-in-out;
     }
     
@@ -1092,6 +1172,11 @@ body {
 }
 
 @media screen and (max-width: 1130px) {
+    .share__img-bg .share__graph-img {
+        left: -5.3rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
     .share__img-bg .share__user-img {
         left: 3.5rem;
         width: 4.6rem;
@@ -1122,7 +1207,7 @@ body {
     }
 
     .share__img-bg .share__graph-img {
-        left: -5.5rem;
+        left: -5rem;
         top: 1.6rem;
         transition: all 0.3s ease-in-out;
     }
@@ -1154,6 +1239,11 @@ body {
 }
 
 @media screen and (max-width: 1050px) {
+    .share__img-bg .share__graph-img {
+        left: -4.7rem;
+        transition: all 0.3s ease-in-out;
+    }
+
     .share__img-bg {
         min-height: 17rem;
         transition: all 0.3s ease-in-out;
@@ -1161,6 +1251,11 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+    .share__img-bg .share__graph-img {
+        left: -4.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
     .share__img-bg .share__user-img {
         left: 3rem;
         width: 4.1rem;
@@ -1183,6 +1278,17 @@ body {
         width: 50%;
         justify-self: center;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .share {
+        padding: 0 1rem;
+    }
+
+    .share__details {
+        width: 100%;
+    }
+    
 }
 
 
@@ -1290,6 +1396,25 @@ body {
 
     .download__details {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .download {
+        background-size: 250%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .download__details {
+        width: 90%;
+    }
+
+    .download__buttons {
+        gap: 1rem;
+    }
+
+    .download__buttons button {
+        padding: 1rem 2rem;
     }
 }
 
@@ -1616,6 +1741,44 @@ body {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .business__features {
+        grid-auto-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .business__feature:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .powerful {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .smart {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+    
+    .scale {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+
+    .professional {
+        grid-column: 1 / 3;
+        grid-row: 6 / 7;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .business {
+        padding-inline: 1rem;
+        gap: 1.5rem;
+    }
+}
+
 
 /********** Account Creation Section **********/
 .account {
@@ -1748,6 +1911,17 @@ body {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .account {
+        padding-inline: 1rem;
+    }
+
+    .account h2 {
+        width: 80%;
+    }
+}
+
+
 /********** Frequent Question Section **********/
 .question {
     padding: 4rem;
@@ -1822,6 +1996,17 @@ body {
 @media screen and (max-width: 700px) {
     .question {
         padding: 2rem;
+    }
+
+    .question ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .question {
+        padding: 2rem;
+        margin: 4rem 1rem;
     }
 
     .question ul {
@@ -1944,12 +2129,33 @@ body {
 @media screen and (max-width: 850px) {
     .prices {
         width: 60%;
+        transition: width 0.3s ease-in-out;
     }
 }
 
 @media screen and (max-width: 650px) {
     .prices {
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .price h2 {
+        text-align: center;
+    }
+    
+    .prices {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .price {
+        padding-inline: 1rem;
+    }
+
+    .prices {
+        width: 100%;
     }
 }
 
@@ -2033,6 +2239,12 @@ body {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .blog {
+        padding-inline: 1rem;
+    }
+}
+
 
 /********** Newsletter Section **********/
 .newsletter {
@@ -2102,6 +2314,35 @@ body {
         display: flex;
         gap: 1.5rem;
         width: 28rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .newsletter {
+        flex-direction: column;
+    }
+    
+    .newsletter__input {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .newsletter__input input {
+        padding: 1rem;
+    }
+
+    .newsletter__input button {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newsletter {
+        padding-inline: 1rem;
+    }
+
+    .newsletter__input {
+        width: 100%;
     }
 }
 
@@ -2216,6 +2457,40 @@ body {
     .community {
         background-size: 250%;
         transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .community__buttons button {
+        padding: 1rem 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .community {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .community {
+        background-size: 300%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .community__buttons {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .community__buttons button {
+        padding: 1rem 0;
+        width: 80%;
+    }
+
+    .community h2 {
+        width: 100%;
     }
 }
 
@@ -2357,6 +2632,16 @@ hr {
 
     .footer__links-container {
         width: 50%;
-        gap: 4rem;
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__container {
+        padding-inline: 1rem;
+    }
+
+    .footer__links-container {
+        width: 60%;
     }
 }
